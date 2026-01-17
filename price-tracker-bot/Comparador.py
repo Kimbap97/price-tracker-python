@@ -48,7 +48,7 @@ class ComparadorPrecios:
         
         nombre_archivo = f"comparativa_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
         df.to_csv(nombre_archivo, index=False, encoding='utf-8-sig')
-        print(f"\n✅ Éxito: Reporte generado como '{nombre_archivo}'")
+        print(f"\nÉxito: Reporte generado como '{nombre_archivo}'")
         print(df[['Producto', 'Precio']].head())
 
 # --- BLOQUE PRINCIPAL ---
@@ -60,4 +60,5 @@ if __name__ == "__main__":
     # Aquí podrías agregar métodos para otras tiendas (Amazon, Falabella, etc.)
     
     bot.exportar_datos(resultados)
+
 
