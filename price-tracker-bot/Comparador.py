@@ -57,7 +57,8 @@ if __name__ == "__main__":
     busqueda = input("¿Qué producto deseas comparar?: ")
     
     resultados = bot.buscar_mercado_libre(busqueda)
-    # Aquí podrías agregar métodos para otras tiendas (Amazon, Falabella, etc.)
+    # Aquí se puede agregar métodos para otras tiendas (Amazon, Falabella, etc.), asi garantizamos un modelo de trabajo mas global
+    # No solo cerrado a ciertos servicios
     
     bot.exportar_datos(resultados)
 
